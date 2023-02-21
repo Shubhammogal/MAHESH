@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahil Poftfolio</title>
+    <link rel="shortcut icon" href="img/favicon-300x287.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/0aa3bfc3c2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark"></i>
+                </ul>
+                <i class="fa-solid fa-bars"></i>
+
+            </nav>
+            <div class="header-text">
+                <h3><span style="color: brown;">SOFTWARE <br> CONSULTING<br> AND DEVELOPMENT<br>
+                        FOR YOUR DIGITAL SUCCESS.</span></h3>
+                <p>Since 2009. For millions of users. We transform businesses with powerful and adaptable digital
+                    solutions that satisfy the needs of today and unlock the opportunities of tomorrow.</p>
+            </div>
+        </div>
+    </div>
+    <!----------------------------ABOUT------------------------------------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/img1.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About us</h1>
+                    <p> Every one wants to know what is aaa ? what thy do ?
+                        aaa is an software Development company will help you to grow your business and we help your
+                        business reach the right people with a good planning and content. Mount advertising agency helps
+                        clients in every way to increase business with good innovative ideas, good content and
+                        strategies.Mount advertising work closely with the client to gather information and pitch their
+                        campaign ideas followed by the creative process of actually making and distributing the ads.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">what we do</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span>Desiging Web interfaces</li>
+                            <li><span>Digital marketing</span>
+                            </li>
+                            <li><span>Tv Ads</span></li>
+                            <li><span>Graphic </span>Designing</li>
+                            <li><span>Video</span> edeting</li>
+                            <li><span>Tv </span>Ads</li>
+                            <li><span>Photo</span>graphy</li>
+                            <li><span>Video</span> Animation</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----------------------------------PORTFOLIO---------------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <a href=" https://shubhammogal.github.io/pt/"><img src="images/project.jpg"></a>
+                    <div class="layer">
+                        <h3>portfolio</h3>
+                        <p>Online Movie Ticket Booking Sysytem Using HTML,&nbsp;CSS,&nbsp;JS,&nbsp;BOOTSTRAP</p>
+                        <a href=" https://shubhammogal.github.io/pt/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/work 2.png">
+                    <div class="layer">
+                        <h3>Amazon Prime Clone</h3>
+                        <p>Prime Clone Website Design using HTML and CSS.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/work 3.jpg">
+                    <div class="layer">
+                        <h3>BMI Calculator</h3>
+                        <p>Website (Using Html,&nbsp;CSS and JavaScript) to calculat Body Mass Index (BMI).</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------------------CONTACT---------------------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Us</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>aaa@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>9067131014</p>
+                    <p><i class="fa-solid fa-home"></i>At Post aurangabad<br><br></p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="tel:+91 9067131014
+                        "><i class="fa fa-square-phone"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form action="" name="Contact-Us">
+                        <input type="email" name="EMAIL" placeholder="Your Email" required>
+                        <input type="text" name="NAME" id="name" placeholder="Your Name" required>
+                        <textarea name="MASSEGE" rows="6" id="message" placeholder="Your Meaasage"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright @ aaaaa 2023</p>
+        </div>
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link")
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbziFuByhnaKRPG-Izbnt8d4MUr-CWRYQpyulQUz02vozdoTkWN39UadvxAzxTxTE_hzFg/exec'
+        const form = document.forms['Contact-Us']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+
+                .then(response => {
+                    form.reset()
+                    console.log('Success!', response)
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+
+</html>
